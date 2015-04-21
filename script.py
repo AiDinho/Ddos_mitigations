@@ -16,7 +16,7 @@ while 1 == 1:
 	
 	r = requests.get(eventurl + '&eventID=' + str(eventID))
 	if r.status_code != 200: break
-		events = r.json()
+	events = r.json()
 	if len(events) == 0: continue
 
 		eventID = events[0]["eventID"]
