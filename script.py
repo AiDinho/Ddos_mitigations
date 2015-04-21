@@ -2,8 +2,7 @@ import requests
 import json
 
 groups = {'external':['0.0.0.0/0'],'internal':['10.0.0.0/8']}
-flows = {'keys':'ipsource,ipdestination','value':'frames','filter':'sourcegroup=
-external&destinationgroup=internal'}
+flows = {'keys':'ipsource,ipdestination','value':'frames','filter':'sourcegroup=external&destinationgroup=internal'}
 threshold = {'metric':'incoming','value':1000}
 target = 'http://localhost:8008'
 
